@@ -35,3 +35,39 @@ input.addEventListener(
     }
   }, DEBOUNCE_DELAY)
 );
+
+function renderCountryList(countries) {
+  let markup = countries
+    .map(country => {
+      return `<li>
+      <img src="${country.flags.svg}" alt="Flag of ${country.name.official}" width="50" hight="28">
+         <p>${country.name.official}</p>
+                </li>`;
+    })
+    .join('');
+
+  countryList.innerHTML = markup;
+}
+
+function renderOneCountry(countries) {
+  let markup = countries
+    .map(country => {
+      return `<li>
+      <img src="${country.flags.svg}" alt="Flag of ${
+        country.name.official
+      }" width="50" hight="28">
+         <p>${country.name.official}</p>
+            <p><b>Capital</b>: ${country.capital}</p>
+            <p><b>Population</b>: ${country.population}</p>
+            <p><b>Languages</b>: ${Object.values(country.languages)} </p>
+                </li>`;
+    })
+    .join('');
+
+  countryList.innerHTML = markup;
+}
+
+function cleanHtml() {
+  countryList.innerHTML = '';
+  countryInfo.innerHTML = '';
+}
