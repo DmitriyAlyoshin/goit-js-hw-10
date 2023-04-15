@@ -29,7 +29,7 @@ body {
   max-width: 320px;
   margin-bottom: 160px;
   transition: width 0.4s ease-in-out;
-  box-shadow: 1px 1px 1px 1px rgb(5, 5, 165);
+  box-shadow: 1px 1px 1px 1px rgb(165, 122, 5);
   border: 0px;
   border-radius: 20px;
 
