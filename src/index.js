@@ -20,11 +20,11 @@ input.addEventListener(
         if (foundData.length > 10) {
           Notiflix.Notify.info(
             'Too many matches found. Please enter a more specific name.',
-            { position: 'center-top' }
+            { position: 'center-center' }
           );
         } else if (foundData.length === 0) {
           Notiflix.Notify.failure('Oops, there is no country with that name', {
-            position: 'center-top',
+            position: 'center-center',
           });
         } else if (foundData.length >= 2 && foundData.length <= 10) {
           renderCountryList(foundData);
