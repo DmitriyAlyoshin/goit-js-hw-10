@@ -41,7 +41,7 @@ function renderCountryList(countries) {
     .map(country => {
       return `<li>
       <img src="${country.flags.svg}" alt="Flag of ${country.name.official}" width="50" hight="28">
-         <p>${country.name.official}</p>
+         <p>${country.name.official} class="color"</p>
                 </li>`;
     })
     .join('');
