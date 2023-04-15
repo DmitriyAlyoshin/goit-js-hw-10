@@ -16,8 +16,9 @@ body {
   background-image: url(../images/IAX10-0027.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 25px;
-  font-style: normal;
+  font-size: 40px;
+  font-style: bold;
+  font-display: block;
   color: purple;
   line-height: 1.5;
 }
